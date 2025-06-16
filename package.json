@@ -4,7 +4,9 @@
   "description": "Better Callouts is a package of CSS Snippets that brings new pre-built callouts, as well as new metadata to edit callouts easily.",
   "scripts": {
     "build-callout-metadata": "sass --watch --no-source-map --no-charset src/callout-metadata.scss:\"build/Custom Callout - Metadata.css\"",
-    "build-callout-templates": "sass --watch --no-source-map --no-charset src/callout-templates.scss:\"build/Custom Callout - Templates.css\""
+    "build-callout-metadata-test": "sass --watch --no-source-map --no-charset src/callout-metadata.scss:\"../Custom Callout - Metadata.css\"",
+    "build-callout-templates": "sass --watch --no-source-map --no-charset src/callout-templates.scss:\"build/Custom Callout - Templates.css\"",
+    "build-callout-templates-test": "sass --watch --no-source-map --no-charset src/callout-templates.scss:\"../Custom Callout - Templates.css\""
   },
   "repository": {
     "type": "git",
