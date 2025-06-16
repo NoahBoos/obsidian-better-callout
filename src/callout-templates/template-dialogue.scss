@@ -1,0 +1,58 @@
+div[data-callout="dialogue"] {
+  --callout-icon: messages-square;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  background-color: transparent;
+
+  > div.callout-title {
+    display: none;
+  }
+
+  > div.callout-content {
+    > * {
+      min-width: 35%;
+      max-width: 80%;
+      width: fit-content;
+      padding: 8px 12px;
+    }
+
+    > :nth-child(odd) {
+      margin-right: auto;
+
+      > div.callout-title {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+
+        > div.callout-icon {
+          transform: scaleX(-1);
+        }
+      }
+    }
+
+    > :nth-child(even) {
+      margin-left: auto;
+
+      > div.callout-title {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 8px;
+      }
+
+      > div.callout-content {
+        text-align: right;
+      }
+    }
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
